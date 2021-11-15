@@ -19,9 +19,7 @@ function selectionSort(array) {
     let length = array.length;
 
     for (let i = 0; i < length; i++) {
-        // Find the smallest element in the array
         let smallestIndex = findSmallestIndex(array);
-        // Adds the smallest element to new array
         sortedArray.push(array.splice(smallestIndex, 1)[0]);
     }
 
